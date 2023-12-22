@@ -2,15 +2,17 @@
   --background: #f3f9fb;
   --paragraphs: #3b4c5c;
   --heading: #0c2134;
-  /* --accent: #ffe22e; */
   --accent: #ff9f1a;
   --shadow: rgba(16, 45, 71, .05);
   --white: white;
   --slate-grey: #687683;
-  --main: #17ca6a;
-  --main-light: #9ce6c5;
-  /* --main: #4893ff;
-  --main-light: #9dc6fd; */
+  --main: #ee2b7a;
+  --main-light: #f368a0;
+   /* --main: #17ca6a; */
+  /* --main-light: #9ce6c5; */
+   /* --accent: #ffe22e; */
+  /* --main: #4893ff;*/
+  /* --main-light: #9dc6fd;  */
   --border: #dce0e5;
   --dark-background: #102d47;
 }
@@ -192,6 +194,8 @@ figcaption {
 
 .logo {
   height: 40px;
+  width: 80px;
+  object-fit: cover;
   max-width: none;
 }
 
@@ -595,7 +599,7 @@ figcaption {
   perspective: 1510px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: start;
+  align-items: stretch;
 }
 
 .link-block-service {
@@ -638,7 +642,7 @@ figcaption {
   grid-row-gap: 25px;
   perspective: 1510px;
   grid-template-rows: auto;
-  align-items: start;
+  align-items: stretch;
 }
 
 .block {
@@ -701,7 +705,7 @@ figcaption {
   grid-row-gap: 25px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: start;
+  align-items: stretch;
 }
 
 .grid-3-columns.margin {
@@ -1241,13 +1245,24 @@ figcaption {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 85px;
 }
 
 .title-footer {
   margin-top: 5px;
   margin-bottom: 30px;
+}
+.link-info {
+  color: var(--slate-grey);
+  font-family: Archivo, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3em;
+  text-decoration: none;
+  transition: color .3s cubic-bezier(.25, .46, .45, .94);
+  display: block;
+  margin-bottom: 0;
 }
 
 .link-footer {
@@ -1261,6 +1276,10 @@ figcaption {
   text-decoration: none;
   transition: color .3s cubic-bezier(.25, .46, .45, .94);
   display: block;
+}
+
+.link-info .link-footer {
+  display: inline-block;
 }
 
 .link-footer:hover {
